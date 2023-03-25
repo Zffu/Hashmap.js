@@ -5,7 +5,7 @@ Hashmap.js is an Javascript lib to add Hashmaps to Javascript.
 
 To import Hashmap.js you need to add it in your html file by using:
 ```html
-<script src="https://cdn.zffu.ml/js/hashmap-js/1.0/Hashmap-js-1.0.js"></script>
+<script src="https://cdn.zffu.ml/js/@hashmap-js/1.0/Hashmap-js-1.0.js"></script>
 ```
 
 ## Using Hashmap.js
