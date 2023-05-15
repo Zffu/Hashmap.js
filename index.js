@@ -1,25 +1,25 @@
 class HashMap {
     constructor() {
-        this.areTypesSet = false;
+        this.enableRequiredTypes = false;
 
         this._data_keys = [];
         this._data_values = [];
     }
 
     setRequiredTypes(type1, type2) {
-        this.areTypesSet = true;
+        this.enableRequiredTypes = true;
         this._type1 = type1.prototype;
         this._type2 = type2.prototype;
     }
 
     removeRequiredTypes() {
-        this.areTypesSet = false;
+        this.enableRequiredTypes = false;
         this._type1 = undefined;
         this._type2 = undefined;
     }
 
     put(key, value) {
-        if(this.areTypesSet) {
+        if(this.enableRequiredTypes) {
             if(key.__proto__ == this._type1 && value.__proto__ == this._type2) {
                 if(!this.keyExists(key)) {
                     this._data_keys.push(key)
